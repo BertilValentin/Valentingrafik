@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="da">
+<head> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentin grafisk</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Valentin Grafisk – Moderne webdesign og udvikling i Danmark.">
+  <meta name="keywords" content="webdesign, grafisk design, PHP, JS, Danmark">
+<meta name="author" content="Bertil Valentin Speich">
+<link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <video autoplay muted loop playsinline id="body-bg-video">
+    <source src="background.mp4" type="video/mp4">
+  </video>
+<!-- Tilbage til top-knap -->
+<button id="toTopBtn" class="to-top">↑</button>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="topbar-center">
+    <div class="topbar-title">
+      <a href="index.html" class="title-link">Valentin grafisk</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero sektion -->
+<section class="hero">
+  <div class="topbar-center">
+    <img src="logo.png" alt="Valentin Grafisk logo" class="logo"/>
+    <h1>Moderne grafisk design lavet i Danmark med dyb integrering</h1>
+    <p class="hero-subtitle">Bertil Valentin Speich - Full-stack udvikler PHP / SQL / JS</p>
+  </div>
+</section>
+
+
+<!-- Hvad jeg tilbyder -->
+<section class="content-box">
+  <h2>Hvad jeg tilbyder</h2>
+  <ul class="services-list">
+    <li class="service-item">
+      <h3>Webdesign</h3>
+      <p>Moderne og responsivt design, der tilpasser sig alle enheder.</p>
+    </li>
+    <li class="service-item">
+      <h3>Grafisk design</h3>
+      <p>Hjemmesider til ethvert behov og dybde</p>
+      <p>Fuld funktionelle betalings services</p>
+      <p>Responsive hjemmesider med kreativ frihed. Du bestemmer!</p>
+    </li>
+    <li class="service-item">
+      <h3>Webudvikling</h3>
+      <p>Full-stack udvikling med fokus på PHP, SQL og JavaScript.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- Hvordan vi kommer i gang -->
+<section class="content-box">
+  <h2>Hvordan vi kommer i gang</h2>
+<ul class="services-list">
+    <li class="service-item">
+      <h3>Send en besked</h3>
+      <p>Send mig en besked med en kort opsummering af -</p>
+      <p>Hvilken type branche du har med at gøre</p>
+      <p>Hvilke funktionaliteter du vil have integreret i din website</p>
+      <p>Jeg svarer hurtigt igen!</p>
+      </li>
+     <li class="service-item">
+      <h3>Priser</h3>
+      <p>Priser afhænger af dybde og efterfølgende services</p>
+      <p>Jeg kan give dig et tilbud på baggrund af din besked</p>
+      <p>Jeg er ny og prøver at bryde ind på markedet så priser vil som udgangspunkt være under gennemsnittet</p>
+    </li>
+  </ul>
+</section>
+
+<!-- Kontakt mig -->
+<section class="content-box kontakt-sektion">
+  <h2>Kontakt mig</h2>
+  <form id="kontaktForm" action="https://formspree.io/f/mwpqbjlg" method="POST">
+    <label for="navn">Navn:</label><br>
+    <input type="text" id="navn" name="navn" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="besked">Besked:</label><br>
+    <textarea id="besked" name="besked" rows="5" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+<div id="formMessage" style="display:none; margin-top: 1rem; color: #1fc345; font-weight: 600;">
+  Tak for din besked! Vi vender tilbage hurtigst muligt.
+</div>
+  <h2>Her finder du mig:</h2>
+  <iframe
+    src="https://www.google.com/maps?q=5683+Haarby&output=embed"
+    width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+  </iframe>
+</section>
+
+  
+  <footer>
+    <p>&copy; 2025 Valentin grafik Aps. bertil.valentin@gmail.com</p>
+  </footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
